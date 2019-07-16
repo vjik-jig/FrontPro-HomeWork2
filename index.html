@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>What is your age?</title>
+  </head>
+  <body>
+    <script>
+      var age = prompt("Сколько вам полных лет?", 100);
+      var lastNumber = +age.substr(-1);
+      age = +age;
+      if (age >= 11 && age <= 14) {
+        alert("Вам " + age + " лет!");
+      } else if (lastNumber == 0 || (lastNumber >= 5 && lastNumber <= 9)) {
+        alert("Вам " + age + " лет!");
+      } else if (lastNumber >= 2 && lastNumber <= 4) {
+        alert("Вам " + age + " года!");
+      } else {
+        alert("Вам " + age + " год!");
+      }
+    </script>
+  </body>
+</html>
